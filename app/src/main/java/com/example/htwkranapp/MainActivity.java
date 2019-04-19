@@ -1,5 +1,6 @@
 package com.example.htwkranapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -22,6 +23,22 @@ public class MainActivity extends Activity  {
     TextView tx1;
     int counter = 3;
 
+
+
+
+
+
+
+
+
+
+    public void openActivityKranMainPage(){
+        // TextActicity ist die Landingpage
+        Intent intent = new Intent(this, TestActivity.class);
+        startActivity(intent);
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,10 +55,23 @@ public class MainActivity extends Activity  {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ed1.getText().toString().equals("admin") &&
-                        ed2.getText().toString().equals("admin")) {
+                if(ed1.getText().toString().equals("") &&
+                        ed2.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(),
-                            "Redirecting...",Toast.LENGTH_SHORT).show();
+                            "Erfolgreich eingeloggt...",Toast.LENGTH_SHORT).show();
+                    // Wenn Login positiv
+
+                    openActivityKranMainPage();
+
+
+
+
+
+
+
+
+
+
                 }else{
                     Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
 
