@@ -33,8 +33,8 @@ public class MainActivity extends Activity  {
 
 
     public void openActivityKranMainPage(){
-        // TextActicity ist die Landingpage
-        Intent intent = new Intent(this, TestActivity.class);
+        // KranSteuerung ist die Landingpage
+        Intent intent = new Intent(this, KranSteuerung.class);
         startActivity(intent);
 
     }

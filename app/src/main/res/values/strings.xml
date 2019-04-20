@@ -14,9 +14,9 @@
         completions."
     </string>
     <string name="title_activity_kran_steuerung">Kran Steuerung</string>
-    <string name="title_home">Bluetooth</string>
-    <string name="title_dashboard">Steuerung</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Steuerung</string>
+    <string name="title_dashboard">BlueTooth</string>
+    <string name="title_notifications">Info</string>
     <string name="title_activity_test">TestActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
